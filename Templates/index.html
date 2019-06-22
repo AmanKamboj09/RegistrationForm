@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{% block body%}
+
+<body>
+<!--background-->
+<h1> Registration Form</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Register Now</h2>
+			<div class="book-form agileits-login">
+				<form action="#" method="post">
+					<div class="agileits_reservation_grid">
+					<div class="phone_email">
+						<div class="form-text">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<input type="text" name="name" id="name" placeholder="Name" required="">
+						</div> 
+					</div>
+					<div class="phone_email phone_email1">
+						<div class="form-text">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<input type="text" name="college" id = "college" placeholder="College Name" required="">
+						</div>
+					</div>
+					
+					<div class="phone_email">
+						<div class="form-text">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<input type="text" name="contact" id = "contact" placeholder="Phone number" required="">
+						</div> 
+					</div> 
+					<div class="phone_email phone_email1">
+						<div class="form-text">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							<input type="email" name="emailid" id = "emailid" placeholder="Email" required="">
+						</div>
+					</div>
+						
+					
+						<div class="span1_of_1 phone_email1">
+							<div class="book_date"> 
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+									<input  id="datepicker" name="startdate" type="text" value="" placeholder="Starting Date"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+
+							</div>					
+						</div>
+						<div class="span1_of_1 phone_email">
+							<div class="book_date"> 
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+									<input  id="datepicker1" name="enddate" type="text" value="" placeholder="Ending Date"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+
+							</div>					
+						</div>
+						<div class="span1_of_1">
+							<!-- start_section_room -->
+							<div class="section_room">
+								<i class="fa fa-users" aria-hidden="true"></i>
+								<select id="country" name = "course" onchange="change_country(this.value)" class="frm-field required">
+									<option value="Course">Course</option>
+									<option value="C1 : C">C1 : C</option>
+									<option value="C2 : C++">C2 : C++</option>         
+									<option value="C3 : Python">C3 : Python</option>
+									<option value="C4 : Data Structure">C4 : Data Structure</option>
+									<option value="C5 : OOPs">C5 : OOPs</option>
+									<option value="C6 : Other ">C6 : Other </option>
+								</select>
+							</div>	
+						</div>
+						<div class="span1_of_1 phone_email1">
+							<!-- start_section_room -->
+							<div class="section_room">
+								<i class="fa fa-h-square" aria-hidden="true"></i>
+								<select id="country1" name  = "year" onchange="change_country(this.value)" class="frm-field required">
+									<option value="Year">Year</option>
+									<option value="1st">1st </option>
+									<option value="2nd">2nd </option>         
+									<option value="3rd">3rd </option>
+									<option value="Final">Final </option>
+									<option value="Other">Other </option>
+								</select>
+							</div>	
+						</div>
+						<div class="clear"></div>
+					</div> 
+					<input type="submit" value="Book Now">
+					<div class="clear"></div>
+				</form>
+			</div>
+
+		</div>
+   </div>
+  <!--copyright-->
+	
+	
+{% endblock %}	

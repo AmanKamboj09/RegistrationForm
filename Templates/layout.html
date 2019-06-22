@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Course Registration Form</title>
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resort Booking Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta tags -->
+<!-- font-awesome-icons -->
+<link href="{{url_for('static', filename= 'css/font-awesome.css')}}" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<!-- Stylesheet -->
+<link href="{{url_for('static', filename= 'css/style.css')}}" rel='stylesheet' type='text/css' />
+<!-- //Stylesheet -->
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+<!--//fonts--> 
+</head>
+
+
+
+{% block body %}{% endblock %}
+
+
+
+
+
+<div class="copy w3ls">
+		<p>&copy; 2019 Course Registration Form . All Rights Reserved  | Design by <a href="http://amankamboj.blogspot.com" target="_blank">Aman Kamboj</a> </p>
+	</div>
+<!--//copyright-->
+		<script type="text/javascript" src="{{url_for('static', filename= 'js/jquery-2.1.4.min.js')}}"></script>
+		<!-- Calendar -->
+				<link rel="stylesheet" href="{{url_for('static', filename= 'css/jquery-ui.css')}}" />
+				<script src="{{url_for('static', filename= 'js/jquery-ui.js')}}"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script>
+			<!-- //Calendar -->
+
+</body>
+</html>
